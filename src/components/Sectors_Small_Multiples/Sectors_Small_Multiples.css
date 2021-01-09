@@ -1,0 +1,22 @@
+/* Create three equal columns that floats next to each other */
+.grid-column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 250px; /* Should be removed. Only for demonstration */
+  }
+ 
+  .grid-box {
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 6px;
+    margin: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  .grid-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

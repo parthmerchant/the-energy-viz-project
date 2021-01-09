@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.landing-container {
+    padding: 30px;
+}
+
+.column-one {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 500px;
+    text-align: center;
+}
+.column-two {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    height: 500px;
+    text-align: left;
+    line-height: 2.0;
+    vertical-align: middle;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.row:after {
+    content: '';
+    display: table;
+    clear:both;
+}
+
+.github-button {
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+.github-button :hover {
+    padding: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    background-color: gray;
+    color: white;
+}
