@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, Label } from 'recharts';
+import { AreaChart, Area, XAxis, YAxis, Tooltip } from 'recharts';
 import data from '../../data/energy_sector.json';
 
 export default class Sectors extends Component { 
@@ -37,11 +37,20 @@ export default class Sectors extends Component {
           top: 10, right: 30, left: 0, bottom: 0,
         }}
       >
-        <CartesianGrid strokeDasharray="5 5" />
+        <defs>
+          <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8}/>
+            <stop offset="95%" stopColor="#8884d8" stopOpacity={0}/>
+          </linearGradient>
+          <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8}/>
+            <stop offset="95%" stopColor="#82ca9d" stopOpacity={0}/>
+          </linearGradient>
+        </defs>
         <XAxis dataKey="Year" />
         <YAxis />
         <Tooltip />
-        <Area type="monotoneX" dataKey={this.state.value} stroke="#14C43F" fill="#16D830" />
+        <Area type="monotoneX" dataKey={this.state.value} stroke="#14C43F" fillOpacity={1} fill="url(#colorPv)" />
       </AreaChart>
       </div>
         </center>

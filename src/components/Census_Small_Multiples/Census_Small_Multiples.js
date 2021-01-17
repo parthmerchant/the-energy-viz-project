@@ -24,9 +24,8 @@ export default class Census_Small_Multiples extends Component {
                           top: 10, right: 30, left: 30, bottom: 0,
                       }}
                   >
-                      <CartesianGrid strokeDasharray="5 5" />
                       <XAxis dataKey="Year" />
-                      <YAxis />
+                      <YAxis domain={[0,850000]} />
                       <Tooltip />
                       <Area type="monotoneX" dataKey="Electricity - total nuclear production" stroke="#14C43F" fill="#16D830" />
                   </AreaChart>
@@ -44,9 +43,8 @@ export default class Census_Small_Multiples extends Component {
                           top: 10, right: 30, left: 30, bottom: 0,
                       }}
                   >
-                      <CartesianGrid strokeDasharray="5 5" />
                       <XAxis dataKey="Year" />
-                      <YAxis />
+                      <YAxis domain={[0,500000]} />
                       <Tooltip />
                       <Area type="monotoneX" dataKey="Heat - Net production" stroke="#14C43F" fill="#16D830" />
                   </AreaChart>
@@ -63,9 +61,8 @@ export default class Census_Small_Multiples extends Component {
                           top: 10, right: 30, left: 30, bottom: 0,
                       }}
                   >
-                      <CartesianGrid strokeDasharray="5 5" />
                       <XAxis dataKey="Year" />
-                      <YAxis />
+                      <YAxis domain={[0,500000]} />
                       <Tooltip />
                       <Area type="monotoneX" dataKey="Gas Oil/ Diesel Oil - Production" stroke="#14C43F" fill="#16D830" />
                   </AreaChart>
@@ -84,9 +81,8 @@ export default class Census_Small_Multiples extends Component {
                           top: 10, right: 30, left: 30, bottom: 0,
                       }}
                   >
-                      <CartesianGrid strokeDasharray="5 5" />
                       <XAxis dataKey="Year" />
-                      <YAxis />
+                      <YAxis domain={[0,500000]} />
                       <Tooltip />
                       <Area type="monotoneX" dataKey="Electricity - total geothermal production" stroke="#14C43F" fill="#16D830" />
                   </AreaChart>
@@ -103,9 +99,8 @@ export default class Census_Small_Multiples extends Component {
                           top: 10, right: 30, left: 30, bottom: 0,
                       }}
                   >
-                      <CartesianGrid strokeDasharray="5 5" />
                       <XAxis dataKey="Year" />
-                      <YAxis />
+                      <YAxis domain={[0,500000]} />
                       <Tooltip />
                       <Area type="monotoneX" dataKey="Electricity - total hydro production" stroke="#14C43F" fill="#16D830" />
                   </AreaChart>
@@ -122,9 +117,8 @@ export default class Census_Small_Multiples extends Component {
                           top: 10, right: 30, left: 30, bottom: 0,
                       }}
                   >
-                      <CartesianGrid strokeDasharray="5 5" />
                       <XAxis dataKey="Year" />
-                      <YAxis />
+                      <YAxis domain={[0,500000]} />
                       <Tooltip />
                       <Area type="monotoneX" dataKey="Liquefied petroleum gas (LPG) - Production" stroke="#14C43F" fill="#16D830" />
                   </AreaChart>

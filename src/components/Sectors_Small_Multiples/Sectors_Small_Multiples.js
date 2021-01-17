@@ -24,9 +24,8 @@ export default class Sectors_Small_Multiples extends Component {
                         top: 10, right: 30, left: 30, bottom: 0,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="5 5" />
                     <XAxis dataKey="Year" />
-                    <YAxis />
+                    <YAxis domain={[0, 42500]} />
                     <Tooltip />
                     <Area type="monotoneX" dataKey="Primary Energy Consumed by the Residential Sector" stroke="#14C43F" fill="#16D830" />
                 </AreaChart>
@@ -44,9 +43,8 @@ export default class Sectors_Small_Multiples extends Component {
                         top: 10, right: 30, left: 30, bottom: 0,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="5 5" />
                     <XAxis dataKey="Year" />
-                    <YAxis />
+                    <YAxis domain={[0, 42500]} />
                     <Tooltip />
                     <Area type="monotoneX" dataKey="Primary Energy Consumed by the Commercial Sector" stroke="#14C43F" fill="#16D830" />
                 </AreaChart>
@@ -63,9 +61,8 @@ export default class Sectors_Small_Multiples extends Component {
                         top: 10, right: 30, left: 30, bottom: 0,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="5 5" />
                     <XAxis dataKey="Year" />
-                    <YAxis />
+                    <YAxis domain={[0, 42500]} />
                     <Tooltip />
                     <Area type="monotoneX" dataKey="Primary Energy Consumed by the Industrial Sector" stroke="#14C43F" fill="#16D830" />
                 </AreaChart>
@@ -84,9 +81,8 @@ export default class Sectors_Small_Multiples extends Component {
                         top: 10, right: 30, left: 30, bottom: 0,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="5 5" />
                     <XAxis dataKey="Year" />
-                    <YAxis />
+                    <YAxis domain={[0, 42500]} />
                     <Tooltip />
                     <Area type="monotoneX" dataKey="Primary Energy Consumed by the Transportation Sector" stroke="#14C43F" fill="#16D830" />
                 </AreaChart>
@@ -103,9 +99,8 @@ export default class Sectors_Small_Multiples extends Component {
                         top: 10, right: 30, left: 30, bottom: 0,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="5 5" />
                     <XAxis dataKey="Year" />
-                    <YAxis />
+                    <YAxis domain={[0, 42500]} />
                     <Tooltip />
                     <Area type="monotoneX" dataKey="Primary Energy Consumed by the Electric Power Sector" stroke="#14C43F" fill="#16D830" />
                 </AreaChart>
@@ -122,9 +117,8 @@ export default class Sectors_Small_Multiples extends Component {
                         top: 10, right: 30, left: 30, bottom: 0,
                     }}
                 >
-                    <CartesianGrid strokeDasharray="5 5" />
                     <XAxis dataKey="Year" />
-                    <YAxis />
+                    <YAxis domain={[0, 30000]} />
                     <Tooltip />
                     <Area type="monotoneX" dataKey="Primary Energy Consumption Total" stroke="#14C43F" fill="#16D830" />
                 </AreaChart>
