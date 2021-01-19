@@ -40,7 +40,7 @@ export default class Sectors extends Component {
         height={450}
         data={data}
         margin={{
-          top: 10, right: 30, left: 20, bottom: 20,
+          top: 10, right: 50, left: 20, bottom: 20,
         }}
       >
         <defs>

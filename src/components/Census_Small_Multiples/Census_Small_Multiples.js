@@ -160,7 +160,7 @@ export default class Census_Small_Multiples extends Component {
           <center>
           <div className="test-box">
             <p className="small-multiple-grid-title">USA UN-Census Commodity Production</p>
-            <p className="viz-text"></p>
+            <p className="viz-text">In this visualization, we also implement small multiples however we do not use the same Y-Axis scale for all the line charts because doing so would take away from the information we can hope to observe for each small multiple line chart. We also use the same interactive tooltip from the previous small multiple component, as it allows us to see the exact amount of energy consumed.</p>
             <div class="grid-row">
               <div class="grid-column">
                 <div class="grid-box">
