@@ -10,6 +10,25 @@ var region_2 = filter_function.where(data, {Region: 2});
 var region_3 = filter_function.where(data, {Region: 3});
 var region_4 = filter_function.where(data, {Region: 4});
 
+const CustomToolTip = ({ active, payload, label }) => {
+  if (active) {
+    let state = payload[0]["payload"]["State"];
+    let energy = payload[0]["value"];
+    let gdp = payload[1]["value"];
+    let energy_output = 'Consumption: '+energy;
+    let gdp_output = 'GDP: '+gdp;
+    return (
+      <div className="custom-tooltip">
+        <p className="label">{`${state}`}</p>
+        <p className="label">{`${energy_output}`}</p>
+        <p className="label">{`${gdp_output}`}</p>
+      </div>
+    );
+  }
+
+  return null;
+};
+
 export default class Energy_Economy_Scatterplot extends Component {
   
   constructor(props) {
@@ -53,7 +72,7 @@ export default class Energy_Economy_Scatterplot extends Component {
               <Label value="Total Consumption" offset={-40} position="insideBottom" />
             </XAxis>
             <YAxis type="number" dataKey="GDP2014" name="GDP2014" label={{ value: 'GDP 2014', angle: -90, offset: 30, position: 'left' }}/>
-            <Tooltip cursor={{ strokeDasharray: '3 3' }} />
+            <Tooltip cursor={{ strokeDasharray: '3 3' }} content={CustomToolTip}/>
             <Legend />
             <Scatter name="Northeast Region" data={region_1} fill="#FF3E15" />
             <Scatter name="Midwest Region" data={region_2} fill="#27B275" />
