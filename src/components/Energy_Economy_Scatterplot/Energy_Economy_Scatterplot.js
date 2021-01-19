@@ -66,7 +66,7 @@ export default class Energy_Economy_Scatterplot extends Component {
           <ScatterChart
             width={800}
             height={450}
-            margin={{ top: 20, right: 50, bottom: 30, left: 40,}}
+            margin={{ top: 20, right: 80, bottom: 30, left: 40,}}
           >
             <XAxis type="number" dataKey={this.state.value} name={this.state.value}>
               <Label value="Total Consumption" offset={-40} position="insideBottom" />

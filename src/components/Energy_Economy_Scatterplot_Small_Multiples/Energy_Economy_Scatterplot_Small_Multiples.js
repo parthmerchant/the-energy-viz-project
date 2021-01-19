@@ -45,6 +45,8 @@ export default class Energy_Economy_Scatterplot_Small_Multiples extends Componen
     render() {
       return (
           <div className="main-container">
+            <center>
+            <p className="text-container">The following visualization transforms our interactive scatterplot above for Consumption for different commodities and GDP in 2014 and generates small multiples based on specific regions. This visualization component also has an interactive tooltip that allows users to see which state you are hovering over.</p>
             <select value={this.state.value} onChange={this.handleChange}>
               <option value="TotalC2014">2014 Total Energy Consumption</option>
               <option value="CoalC2014">2014 Total Coal Consumption</option>
@@ -129,6 +131,7 @@ export default class Energy_Economy_Scatterplot_Small_Multiples extends Componen
                   </div>
                 </div>
             </div>
+            </center>
           </div>
       );
     }
