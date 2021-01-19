@@ -1,9 +1,14 @@
+#sm_energy {
+  height: 700px;
+}
+
 /* Create three equal columns that floats next to each other */
 .grid-column {
     float: left;
     width: 33.33%;
     padding: 10px;
-    height: 250px; /* Should be removed. Only for demonstration */
+    height: 300px; /* Should be removed. Only for demonstration */
+    margin-bottom: 20px;
   }
  
   .grid-box {
@@ -12,6 +17,7 @@
     box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
     border-radius: 6px;
     margin: 10px;
+    padding: 10px;
   }
   
   /* Clear floats after the columns */
@@ -20,3 +26,15 @@
     display: table;
     clear: both;
   }
+
+.custom-tooltip {
+  background-color: rgb(94, 94, 94);
+  color: white;
+  opacity: 0.8;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.viz-text {
+  width: 60%;
+}

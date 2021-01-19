@@ -1,3 +1,7 @@
+.un_energy {
+  height: 650px;
+}
+
 /* Create three equal columns that floats next to each other */
 .grid-column {
     float: left;
@@ -19,4 +23,16 @@
     content: "";
     display: table;
     clear: both;
+  }
+
+  .viz-text {
+    width: 60%;
+  }
+
+  .custom-tooltip {
+    background-color: rgb(94, 94, 94);
+    color: white;
+    opacity: 0.8;
+    padding: 5px;
+    font-size: 10px;
   }

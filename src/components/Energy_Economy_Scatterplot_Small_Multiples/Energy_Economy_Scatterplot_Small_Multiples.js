@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { ScatterChart, Scatter, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { ScatterChart, Scatter, XAxis, YAxis, Tooltip, Legend } from 'recharts';
 import data from '../../data/usa_energy.json';
 import './Energy_Economy_Scatterplot_Small_Multiples.css';
 
@@ -10,7 +10,7 @@ var region_2 = filter_function.where(data, {Region: 2});
 var region_3 = filter_function.where(data, {Region: 3});
 var region_4 = filter_function.where(data, {Region: 4});
 
-export default class FourthViz extends Component {
+export default class Energy_Economy_Scatterplot_Small_Multiples extends Component {
   
     constructor(props) {
       super(props);
@@ -45,7 +45,6 @@ export default class FourthViz extends Component {
                         height={300}
                         margin={{ top: 20, right: 20, bottom: 20, left: 20,}}
                     >
-                        <CartesianGrid />
                         <XAxis type="number" dataKey={this.state.value} name={this.state.value}/>
                         <YAxis type="number" dataKey="GDP2014" name="GDP2014"/>
                         <Tooltip cursor={{ strokeDasharray: '3 3' }} />
@@ -63,7 +62,6 @@ export default class FourthViz extends Component {
                         height={300}
                         margin={{ top: 20, right: 20, bottom: 20, left: 20,}}
                     >
-                        <CartesianGrid />
                         <XAxis type="number" dataKey={this.state.value} name={this.state.value}/>
                         <YAxis type="number" dataKey="GDP2014" name="GDP2014"/>
                         <Tooltip cursor={{ strokeDasharray: '3 3' }} />
@@ -85,7 +83,6 @@ export default class FourthViz extends Component {
                         height={300}
                         margin={{ top: 20, right: 20, bottom: 20, left: 20,}}
                     >
-                        <CartesianGrid />
                         <XAxis type="number" dataKey={this.state.value} name={this.state.value}/>
                         <YAxis type="number" dataKey="GDP2014" name="GDP2014"/>
                         <Tooltip cursor={{ strokeDasharray: '3 3' }} />
@@ -103,7 +100,6 @@ export default class FourthViz extends Component {
                         height={300}
                         margin={{ top: 20, right: 20, bottom: 20, left: 20,}}
                     >
-                        <CartesianGrid />
                         <XAxis type="number" dataKey={this.state.value} name={this.state.value}/>
                         <YAxis type="number" dataKey="GDP2014" name="GDP2014"/>
                         <Tooltip cursor={{ strokeDasharray: '3 3' }} />
