@@ -3,6 +3,8 @@
 This project was the focus of my research study "Building Interactive Web-based Visualization Tool". I completed this project during the Spring 2020 semester, but have since made updates 
 to ensure reproducability of the work I have completed as well as to add new visualizations, format the web interface and deploy the interface on AWS Amplify. 
 
+#### Observable Notebook: https://observablehq.com/@parthmerchant/the-energy-viz-project
+
 ## Dependencies
 
 You require Node.js and npm in order to view The Energy Viz Project locally. 
